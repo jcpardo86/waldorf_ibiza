@@ -1,0 +1,28 @@
+<section id="formulario" onclick="cambiarColor(this)">
+        <div class="formulario">
+            <h2>Formulario</h2>
+                <p>¡Nos encantaría saber de ti! Utiliza el formulario de contacto a continuación para ponerte en contacto con nosotros:</p>
+            <form action="" class="form-contacto" id="contactForm">
+                <label for="name" class="form-label">Indica tu nombre</label>
+                    <input type="text" id="name" class="form-input" required placeholder="Nombre">
+                <label for="email" class="form-label">Indica tu correo electrónico</label>
+                    <input type="email" id="email" class="form-input" required placeholder="Email">
+                <label for="comment" class="form-label">Escribenos tu consulta</label>
+                    <textarea class="form-input" id="comment" required placeholder="Comentario"></textarea>
+                <div class="btn-form-contact">
+                    <button type="button" id="btn-form-contact" onclick="validateForm()">Enviar</button>
+                </div>
+                <div id="errorMessage" class="error-message"></div>
+                <div id="successMessage" class="success-message"></div>
+            </form>
+        </div>
+        <div class="contacto-redes-sociales">
+            <h2>Síguenos y Suscríbete</h2>
+                <p>Mantente actualizado sobre las últimas noticias, eventos y actividades de nuestra escuela. Síguenos en nuestras redes sociales y suscríbete a nuestro boletín de noticias:</p>
+            <div class="w-iconos-rrss">
+                <a href="https://www.facebook.com/waldorfibiza"><img src="/img/iconos/facebook.png" alt="perfil-facebook" class="contacto-iconos-rrss" target="_blank"/></a>
+                <a href="https://www.instagram.com/escuelawaldorfibiza/?hl=es"><img src="/img/iconos/instagram.png" alt="perfil-instagram" class="contacto-iconos-rrss"target="_blank"></a>
+                <div class="video-youtube"><iframe class ="video_youtube"width="560" height="315" src="https://www.youtube.com/embed/7pUj9TGtNAk?si=M4c4FDIWNu7zTPlB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+            </div>
+        </div>
+    </section>

@@ -1,0 +1,61 @@
+#carousel-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+#carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.slide-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+
+h2, p {
+    margin: 0;
+}
+
+/* Estilo para los botones de navegación */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    opacity: 0.7;
+}
+
+#prevBtn {
+    left: 10px;
+}
+
+#nextBtn {
+    right: 10px;
+}
